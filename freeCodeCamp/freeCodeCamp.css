@@ -1,0 +1,11 @@
+.freeImage{
+  margin-top: 3rem;
+  height: 80vh;
+  width: 90%;
+  background-image: url(../freeCodeCamp/FREE\ CODECAMP.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px black solid;
+  border-radius: 30px;
+}

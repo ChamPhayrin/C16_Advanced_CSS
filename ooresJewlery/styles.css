@@ -1,0 +1,205 @@
+
+/* Hero banner and Logo */
+.heroBar{
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  background-color: #4a2960;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ooresLogo{
+  height: 34vh;
+  width: 20vw;
+  margin: 0;
+  padding: 0;
+  background-image: url(../ooresJewlery/oores-jewlery-high-resolution-logo-transparent.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 3rem;
+}
+/* Filter and Search Bar */
+.filterNSearch{
+  width: 100%;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.filter{
+  color: white;
+  padding: 10px;
+  background-color: #4a2960;
+  border-radius: 30px;
+  box-shadow: -7px 7px 1px 1px #61357962;
+}
+
+.searchbar{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar i{
+  color: #4a2960;
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+}
+
+#searchbar{
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  padding: 7px;
+  border: 1.5px solid #4a2960;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  outline: none;
+}
+
+/* Product Grid */
+
+.productGrid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
+}
+
+.card{
+  width: 80%;
+  height: 95%;
+  background-color: #4a2960;
+  border-radius: 5px;
+  border: #4a2960 10px double;
+  cursor: pointer;
+}
+
+/* CARD BACKGROUNDS */
+.ring1{
+  background-image: url(../ooresJewlery/ringDetail/ringPictures/briarRoseW:ThreeStones.webp);
+  background-size: cover;
+  background-position: center;
+}
+.ring2{
+  background-image: url(../ooresJewlery/ringDetail/ringPictures/briarRoseHaloW:Oval.webp);
+  background-size: cover;
+  background-position: center;
+}
+.ring3{
+  background-image: url(../ooresJewlery/ringDetail/ringPictures/woodlandSolitaireTwo.webp);
+  background-size: cover;
+  background-position: center;
+}
+.ring4{
+  background-image: url(../ooresJewlery/ringDetail/ringPictures/briarRoseW:OvalThreeStones.webp);
+  background-size: cover;
+  background-position: center;
+}
+.ring5{
+  background-image: url(../ooresJewlery/ringDetail/ringPictures/briarRoseW:OvalThreeStonesGreen.webp);
+  background-size: cover;
+  background-position: center;
+}
+.ring6{
+  background-image: url(../ooresJewlery/ringDetail/ringPictures/briarRoseW:OvalBlue.webp);
+  background-size: cover;
+  background-position: center;
+}
+.ring7{
+  background-image: url(../ooresJewlery/ringDetail/ringPictures/briarRoseW:ThreeStonesPink.webp);
+  background-size: cover;
+  background-position: center;
+}
+.ring8{
+  background-image: url(../ooresJewlery/ringDetail/ringPictures/marquisePeriwinkle.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* CARD HOVER EFFECT */
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+  background: rgba(77, 77, 77, .9);
+  color: white;
+  opacity: 0;
+  transition: all 0.3s;
+  font-family: 'Playfair Display', serif;
+}
+
+.rings {
+  padding-left: 20px;
+  letter-spacing: 2px;
+}
+
+.head {
+  transform: translateY(5px);
+  transition: all 0.5s;
+  font-size: 25px;
+}
+
+.description{
+  font-size: 12px;
+  letter-spacing: 2px;
+  transform: translateY(5px);
+  transition: all 0.5s;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;  
+  /* opacity: 0; */
+  transform: translateY(5px);
+  transition: all 0.5s;
+}
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.5s;
+  span {
+    margin-left: 20px;
+  }
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+  & hr {
+    width: 75px;
+    transition-delay: 0.2s;
+  }
+  & .description{
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+    opacity: 1;
+  }
+  & .price {
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+    opacity: 1;
+  }
+  & .cart {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+}

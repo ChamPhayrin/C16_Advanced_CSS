@@ -1,0 +1,45 @@
+
+
+.flagAll{
+  width: 70vw ;
+}
+
+.flag{ 
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  height: 65vh;
+  width: 100%;
+  border: 2px black solid;
+  background-color: aquamarine;
+}
+
+.stars{
+  background-image: url('./stars.png');
+  background-size: 100% 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-row: 1 / span 7;
+  width: 100%;
+}
+
+
+.stripes{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.stripes:nth-child(26n+2),
+.stripes:nth-child(26n+4),
+.stripes:nth-child(26n+6),
+.stripes:nth-child(26n+8),
+.stripes:nth-child(26n+11),
+.stripes:nth-child(26n+12),
+.stripes:nth-child(26n+15),
+.stripes:nth-child(26n+16),
+.stripes:nth-child(26n+19),
+.stripes:nth-child(26n+20),
+.stripes:nth-child(26n+23),
+.stripes:nth-child(26n+24)
+{
+  background-color: rgb(255, 0, 0);
+}
